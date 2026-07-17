@@ -1,8 +1,10 @@
 {
   "name": "todo-vanilla-js",
-  "version": "0.0.0",
+  "description": "Приложение для управления списком задач на JavaScript",
   "private": true,
   "type": "module",
+  "license": "MIT",
+  "author": "Kustiche",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
