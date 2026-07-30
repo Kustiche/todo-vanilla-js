@@ -1,20 +1,24 @@
 {
-  "name": "todo-vanilla-js",
-  "description": "Приложение для управления списком задач на JavaScript",
-  "private": true,
-  "type": "module",
-  "license": "MIT",
-  "author": "Kustiche",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint src/**/*.js"
-  },
-  "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "eslint": "^10.7.0",
-    "globals": "^17.7.0",
-    "vite": "^8.1.1"
-  }
+	"name": "todo-vanilla-js",
+	"description": "Приложение для управления списком задач на JavaScript",
+	"private": true,
+	"type": "module",
+	"license": "MIT",
+	"author": "Kustiche",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"format": "prettier src/**/*.{css,js} --write"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"eslint": "^10.7.0",
+		"eslint-config-prettier": "^10.1.8",
+		"globals": "^17.7.0",
+		"prettier": "^3.9.5",
+		"vite": "^8.1.1"
+	}
 }
