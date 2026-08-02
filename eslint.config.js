@@ -6,8 +6,8 @@ import prettier from 'eslint-config-prettier'
 export default defineConfig([
 	{
 		files: ['src/**/*.js'],
-		plugins: { js, prettier },
-		extends: ['js/recommended'],
+		plugins: { js },
+		extends: ['js/recommended', 'prettier'],
 		languageOptions: { globals: globals.browser },
 		rules: {
 			'no-console': 'warn',
