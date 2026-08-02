@@ -11,7 +11,8 @@
 		"preview": "vite preview",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"format": "prettier src/**/*.{css,js} --write"
+		"format": "prettier src/**/*.{css,js} --write",
+		"sass": "sass --watch src/scss/style.scss src/style.css"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
@@ -19,6 +20,7 @@
 		"eslint-config-prettier": "^10.1.8",
 		"globals": "^17.7.0",
 		"prettier": "^3.9.5",
+		"sass": "^1.102.0",
 		"vite": "^8.1.1"
 	}
 }
