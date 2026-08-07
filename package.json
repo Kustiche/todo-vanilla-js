@@ -9,15 +9,26 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"lint": "eslint",
-		"lint:fix": "eslint --fix",
-		"format": "prettier src/**/*.{css,js} --write"
+		"lint": "eslint src/**/*.js",
+		"lint:fix": "eslint src/**/*.js --fix",
+		"format": "prettier src/**/*.{scss,js} --write",
+		"prepare": "husky",
+		"lint-staged": "lint-staged"
+	},
+	"lint-staged": {
+		"*.scss": "prettier --write",
+		"*.js": [
+			"eslint --fix",
+			"prettier --write"
+		]
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"eslint": "^10.7.0",
 		"eslint-config-prettier": "^10.1.8",
 		"globals": "^17.7.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^17.3.0",
 		"prettier": "^3.9.5",
 		"sass": "^1.102.0",
 		"vite": "^8.1.1"
