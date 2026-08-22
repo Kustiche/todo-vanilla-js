@@ -1,18 +1,22 @@
 body {
-	background-color: #000;
-}
-
-.wrap {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	height: 100vh;
+	margin: 0;
+	min-height: 100vh;
+	background-color: #000;
+	background-image: url(../assets/img/bodyBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
 }
 
 .text {
 	margin: 0;
+	padding: 10px;
 	font-family: sans-serif;
 	color: #fff;
-	font-size: 25px;
+	font-size: 40px;
+	border: 3px solid purple;
+	border-radius: 20px;
+	background-color: #000;
 }
